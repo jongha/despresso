@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="euc-kr"?> 
+<update-data> 
+
+	<file name="mfc80u.dll"> 
+		<version>8.0.50727.42</version> 
+		<downpath>C:\Program Files\dEspresso</downpath> 
+		<checksum></checksum> 
+	</file> 
+
+	<file name="dEspresso.exe"> 
+		<version>1.0.0.1</version> 
+		<downpath>C:\Program Files\dEspresso</downpath> 
+		<checksum></checksum> 
+	</file> 
+
+	<file name="dEspresso_Clock.exe"> 
+		<version>1.0.0.0</version> 
+		<downpath>C:\Program Files\dEspresso</downpath> 
+		<checksum></checksum> 
+	</file> 
+
+	<file name="dEspressoUpdate.dll"> 
+		<version>7.2.1.1</version> 
+		<downpath>C:\Program Files\dEspresso</downpath> 
+		<checksum></checksum> 
+	</file> 
+
+</update-data>
