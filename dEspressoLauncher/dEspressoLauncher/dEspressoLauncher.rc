@@ -1,0 +1,220 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\dEspressoLauncher.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\dEspressoLauncher.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DESPRESSOLAUNCHER_DIALOG DIALOGEX 0, 0, 313, 121
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "dEspresso Launcher"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CTEXT           "dEspresso Update...",IDC_STATIC,104,45,105,8
+    LTEXT           "파일명",IDC_CURRENT_FILE,7,86,201,8
+    RTEXT           "상태",IDC_CURRENT_STATE,221,86,44,8
+    CONTROL         "",IDC_CURRENT_PROGRESS,"msctls_progress32",WS_BORDER,7,96,299,7
+    CONTROL         "",IDC_TOTAL_PROGRESS,"msctls_progress32",WS_BORDER,7,105,299,8
+    RTEXT           "다운개수",IDC_COUNT,272,86,34,8
+    LTEXT           "전체상태",IDC_ALL_STATE,273,7,33,8,NOT WS_VISIBLE
+    LTEXT           "남은시간",IDC_ELAPSED_TIME,273,14,33,8,NOT WS_VISIBLE
+    LTEXT           "경과시간",IDC_LEFT_TIME,273,22,33,8,NOT WS_VISIBLE
+    LTEXT           "전송율",IDC_TRANSFER_RATE,281,31,25,8,NOT WS_VISIBLE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "dEspressoLauncher.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "dEspressoLauncher.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DESPRESSOLAUNCHER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 306
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows 소켓 초기화에 실패하였습니다."
+    IDS_HTTPDOWNLOAD_OF     "%1 of %2"
+    IDS_HTTPDOWNLOAD_SECONDS "%1 sec"
+    IDS_HTTPDOWNLOAD_MINUTES "%1 min"
+    IDS_HTTPDOWNLOAD_MINUTES_AND_SECONDS "%1 min %2 sec"
+    IDS_HTTPDOWNLOAD_BYTES  "%1 Bytes"
+    IDS_HTTPDOWNLOAD_KILOBYTES "%1 KB"
+    IDS_HTTPDOWNLOAD_MEGABYTES "%1 MB"
+    IDS_HTTPDOWNLOAD_TIMELEFT "%1"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_HTTPDOWNLOAD_BYTESPERSECOND "%1 Bytes/Sec"
+    IDS_HTTPDOWNLOAD_KILOBYTESPERSECOND "%1 KB/Sec"
+    IDS_KOREAN_Dlg_Check    "잠시만 기다려 주세요..."
+    IDS_KOREAN_Dlg_MsgInit  "서버 접속 및 버전 체크 중..."
+    IDS_KOREAN_Dlg_Update   "dEspresso Service Launcher 마법사"
+    IDS_KOREAN_Dlg_Update_Solution "dEspresso Update 마법사"
+    IDS_KOREAN_Dlg_Update_Text 
+                            "최신버전으로 업데이트 중입니다. 잠시만 기다려 주세요. 잠시후에 자동으로 연결됩니다."
+    IDS_KOREAN_Dlg_Update_Current "현재파일"
+    IDS_KOREAN_Dlg_Update_Total "전체상태"
+    IDS_KOREAN_Dlg_Update_ElapsedTime "경과시간"
+    IDS_KOREAN_Dlg_Update_LeftTime "남은시간"
+    IDS_KOREAN_Dlg_Update_TransferRate "전송속도"
+    IDS_KOREAN_Dlg_Update_MSGShortcut "바탕화면에 바로가기를 만드시겠습니까?"
+    IDS_KOREAN_Dlg_Update_MSGConfirm "확인"
+    IDS_KOREAN_Dlg_Update_MSGURLRetry "URL을 읽어오지 못했습니다. 재시도 하시겠습니까?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_KOREAN_Dlg_Update_Info "서비스 모듈 업데이트 중"
+    IDS_KOREAN_ErrMSG_UpdateDll_Not_Exist 
+                            "%1 파일을 로드 할 수 없습니다.\n설치가 올바르게 되어 있지 않습니다."
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\dEspressoLauncher.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
